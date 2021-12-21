@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "207794120091",
+    "project_id": "poke-proyecto-compumovil",
+    "storage_bucket": "poke-proyecto-compumovil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207794120091:android:3b5cdf2fc4b0ad6fbaed3e",
+        "android_client_info": {
+          "package_name": "com.example.poke_proyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207794120091-nidlig6tb1q509iplvlg2k2ta6fak7fi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.poke_proyecto",
+            "certificate_hash": "ee08d42b6db930edbd076193b2e937ad7863ea89"
+          }
+        },
+        {
+          "client_id": "207794120091-r5j30h5s3db7o586m3jqh1cm4slheecp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU8ocvy2g3RfOevtOlkoPsHgQoIEveO_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207794120091-r5j30h5s3db7o586m3jqh1cm4slheecp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

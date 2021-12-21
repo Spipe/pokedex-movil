@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PokeDex</string>
+    <string name="app_register_button">Registrarse</string>
+</resources>
