@@ -1,10 +1,10 @@
 package com.example.poke_proyecto
 
 import android.content.Intent
-import android.nfc.Tag
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.view.get
 import com.example.poke_proyecto.models.Pokemon
 import com.example.poke_proyecto.models.PokemonRespuesta
 import com.example.poke_proyecto.pokeapi.PokeApiService
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun obtenerDatos() {
         var service = retroFit.create<PokeApiService>(PokeApiService::class.java)
-        service.obtenerListaPokemon().enqueue(object :Callback<PokemonRespuesta>{
+        service.obtenerListaPokemon().enqueue(object:Callback<PokemonRespuesta>{
             override fun onResponse(
                 call: Call<PokemonRespuesta>,
                 response: Response<PokemonRespuesta>
@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
                 listaPokemones.adapter=pokemonAdapter
                 listaPokemones.setOnItemClickListener{parent,view,position,id ->
                     val intent = Intent(this@MainActivity,DetallePokemonActivity::class.java)
+                    intent.putExtra("Pokemon", pokemonesResultados?.get(position))
                     startActivity(intent)
                 }
             }

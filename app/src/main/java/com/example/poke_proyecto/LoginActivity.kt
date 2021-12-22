@@ -42,6 +42,7 @@ class LoginActivity : AppCompatActivity() {
                 .addOnCompleteListener(this){
                     task->
                     if(task.isSuccessful){
+                        progressbar.visibility=View.GONE
                         val intent = Intent(this,MainActivity::class.java)
                         startActivity(intent)
                     }

@@ -50,6 +50,7 @@ class SignInActivity : AppCompatActivity() {
                 .addOnCompleteListener(this){
                     task->
                     if(task.isComplete){
+                        progressBar.visibility=View.GONE
                         val user:FirebaseUser?= auth.currentUser
                         verifyEmail(user)
 
